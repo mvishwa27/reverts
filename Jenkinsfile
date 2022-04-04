@@ -10,7 +10,7 @@ agent any
        sh "git checkout main"
        sh "git status" 
        sh "git pull origin main" 
-       sh "git commit -am 'test commits1'"
+       sh "git commit --allow-empty -am 'test commits1'"
        sh "echo 'commits successful'" 
        sh "git pull origin main" 
        sh "git push origin main" 
