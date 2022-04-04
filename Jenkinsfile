@@ -12,6 +12,8 @@ agent any
        sh "git pull origin main" 
        sh "git commit --allow-empty -am 'test commits1'"
        sh "echo 'commits successful'" 
+       sh "git pull origin main" 
+       sh "git push origin main" 
       }
     }
   }
