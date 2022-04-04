@@ -9,6 +9,7 @@ agent any
        sh "git pull origin main"
        sh "git checkout main"
        sh "git status" 
+       sh "git pull origin main" 
        sh "git commit -am 'test commits1'"
        sh "echo 'commits successful'" 
       }
