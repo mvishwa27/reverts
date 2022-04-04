@@ -14,9 +14,11 @@ agent any
        //sh "git commit --allow-empty -am 'test commits1'"
        //sh "echo 'commits successful'" 
         script{ 
-       sh "git add -A" 
-          sh "if !git diff-index --quiet HEAD \ then git commit -m 'Message here' \ git push origin main \" 
-       echo 'end of script block'
+       sh ("git add -A  
+            if !git diff-index --quiet HEAD then 
+            git commit -m 'Message here'  
+            git push origin main  
+            echo 'end of script block'"
         }
        //sh "git pull origin main" 
        //sh "git push origin main" 
