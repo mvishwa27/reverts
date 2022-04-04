@@ -7,7 +7,9 @@ agent any
        sh "git status" 
        sh "git fetch origin main"
        sh "git pull origin main"
+       sh "git checkout main"
        sh "git status" 
+        
       }
     }
   }
