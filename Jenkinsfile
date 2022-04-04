@@ -15,7 +15,7 @@ agent any
        //sh "echo 'commits successful'" 
         script{ 
        sh "git add -A" 
-          sh "if !git diff-index --quiet HEAD then git commit -m 'Message here' git push origin main" 
+          sh "if !git diff-index --quiet HEAD \ then git commit -m 'Message here' \ git push origin main \" 
        echo 'end of script block'
         }
        //sh "git pull origin main" 
